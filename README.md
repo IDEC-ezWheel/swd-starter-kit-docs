@@ -49,7 +49,7 @@ The SWD StarterKit comes with a default ROS configuration, the ROS graph of node
 
 ![SWD® StarterKit ROS Graph](figs/starterkit-rosgraph.png "SWD® StarterKit ROS Graph")
 
-The package [swd_starter_kit_bringup](https://github.com/ezWheelSAS/swd_starter_kit_bringup) is the entry point for the SWD® StarterKit. At startup, `swd_starter_kit_bringup/starter_kit.launch` is started, and provides an example of configuration for the SWD® StarterKit.
+The package [swd_starter_kit_bringup](https://github.com/IDEC-ezWheel/swd_starter_kit_bringup) is the entry point for the SWD® StarterKit. At startup, `swd_starter_kit_bringup/starter_kit.launch` is started, and provides an example of configuration for the SWD® StarterKit.
 
 This launchfile starts the following ROS nodes:
 
@@ -63,11 +63,11 @@ This launchfile starts the following ROS nodes:
 - `tf/static_transform_publisher`: Publishes the static transforms of the robot.
 - `hector_mapping/hector_mapping`: The HectorSLAM mapping. It uses odometry and LiDAR information to map the environment.
 
-The SWD® StarterKit requires [swd_ros_controllers](https://github.com/ezWheelSAS/swd_ros_controllers) package to control both SWD motors. This package includes an implementation of a differential drive for two SWD® motors. Further informations are available on [github.com/ezWheelSAS/swd_ros_controllers](https://github.com/ezWheelSAS/swd_ros_controllers).
+The SWD® StarterKit requires [swd_ros_controllers](https://github.com/IDEC-ezWheel/swd_ros_controllers) package to control both SWD motors. This package includes an implementation of a differential drive for two SWD® motors. Further informations are available on [github.com/IDEC-ezWheel/swd_ros_controllers](https://github.com/IDEC-ezWheel/swd_ros_controllers).
 
 ## System commissioning
 ### SWD® Core motors
-The SWD® StarterKit cames with preconfigured pair of SWD® motors. However, you can change the configuration using commissioning scripts available on [swd-starter-kit-config](https://github.com/ezWheelSAS/swd-starter-kit-config) repository.
+The SWD® StarterKit cames with preconfigured pair of SWD® motors. However, you can change the configuration using commissioning scripts available on [swd-starter-kit-config](https://github.com/IDEC-ezWheel/swd-starter-kit-config) repository.
 
 ### The safety LiDAR
-The LiDAR cames preconfigured with two security zones, one for the Safety Limited Speed (SLS), and the other for the forward Safe Direction Indication (SDI+). The configuration file is included also on the [swd-starter-kit-config](https://github.com/ezWheelSAS/swd-starter-kit-config) repository. If you need to change zones, make sure the LiDAR OSSDs are correctly configured (see [swd-starter-kit-config](https://github.com/ezWheelSAS/swd-starter-kit-config) for more information).
+The LiDAR cames preconfigured with two security zones, one for the Safety Limited Speed (SLS), and the other for the forward Safe Direction Indication (SDI+). The configuration file is included also on the [swd-starter-kit-config](https://github.com/IDEC-ezWheel/swd-starter-kit-config) repository. If you need to change zones, make sure the LiDAR OSSDs are correctly configured (see [swd-starter-kit-config](https://github.com/IDEC-ezWheel/swd-starter-kit-config) for more information).
